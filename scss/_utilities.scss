@@ -1,0 +1,124 @@
+//colors
+
+$primary-text: hsl(0, 0%, 100%);
+$card1: hsl(263, 55%, 52%);
+$card2: hsl(217, 19%, 35%);
+$card3: hsl(219, 29%, 14%);
+$secondary-text: rgba(255, 255, 255, 0.6);
+
+//fonts
+
+$font-family: "Barlow Semi Condensed", sans-serif;
+$font-weight-primary: 400;
+$font-weight-secondary: 600;
+$font-size-primary: 0.8125rem;
+$font-size-secondary: 1.25rem;
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.card {
+  padding: 1.5rem 1.8rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  color: $primary-text;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.card {
+  #{&}_header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: $font-family;
+    font-size: $font-size-primary;
+    font-weight: $font-weight-primary;
+    margin-bottom: 1.25rem;
+  }
+
+  #{&}__img img {
+    width: 70%;
+    border: 2px solid $secondary-text;
+    border-radius: 50%;
+  }
+
+  #{&}_body {
+    font-family: $font-family;
+
+    h1 {
+      font-size: $font-size-secondary;
+      margin-bottom: 1.25rem;
+      text-align: left;
+    }
+
+    p {
+      font-size: 0.85rem;
+      font-weight: $font-weight-primary;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+      text-align: left;
+    }
+  }
+
+  h3 {
+    opacity: 80%;
+  }
+
+  .opacities {
+    font-size: 12px;
+    opacity: 50%;
+  }
+}
+
+.card1 {
+  background-image: url(/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 1.8rem top 0.8rem;
+  background-color: $card1;
+  color: $primary-text;
+  margin-top: 3rem;
+}
+.card1,
+.card2,
+.card4 {
+  h1 {
+    opacity: 85%;
+    color: $primary-text;
+    max-height: 440px;
+  }
+
+  p {
+    color: $secondary-text;
+  }
+}
+.card2 {
+  background-color: $card2;
+}
+.card3,
+.card5 {
+  background-color: $primary-text;
+  color: black;
+
+  h1 {
+    opacity: 90%;
+  }
+
+  h1,
+  h3 {
+    color: rgba(25, 33, 46, 0.9);
+  }
+
+  p {
+    color: rgba(25, 33, 46, 0.5);
+  }
+
+  .opacities {
+    color: rgba(25, 33, 46, 0.5);
+  }
+}
+.card4 {
+  background-color: $card3;
+}

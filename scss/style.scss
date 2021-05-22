@@ -1,0 +1,13 @@
+@import "utilities";
+@import "responsive";
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  background-color: hsl(210, 46%, 95%);
+}

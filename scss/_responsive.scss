@@ -1,0 +1,48 @@
+// mobiles and tablets
+
+@media screen and (min-width: 520px) and (orientation: landscape) {
+  .card {
+    max-height: 320px;
+  }
+}
+
+// laptops and above
+
+@media screen and (min-width: 1025px) {
+  body {
+    width: 100vw;
+    margin: 5rem auto;
+  }
+  .main {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 3;
+  }
+  .card {
+    min-height: 320px;
+  }
+  .card:nth-child(3) {
+    order: 5;
+  }
+  .card:nth-child(4) {
+    order: 5;
+  }
+  .card1 {
+    margin-top: 0px;
+    grid-column: 1 / span 2;
+  }
+  .card3 {
+    align-items: flex-start;
+  }
+  .card4 {
+    grid-column: 2 / span 2;
+  }
+  .card5 {
+    min-height: 100%;
+  }
+  .card:nth-child(5) {
+    grid-row: span 2;
+    align-items: center;
+  }
+}
